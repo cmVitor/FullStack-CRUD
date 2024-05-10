@@ -1,1 +1,3 @@
-Projeto de CRUD simples utilizando JavaScript, React, node.js e banco de dados MySQL.
+# CRUD FullStack
+
+## Projeto simples de uma CRUD de usuarios utilizando Node, React & MySQL
