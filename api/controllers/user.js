@@ -55,3 +55,14 @@ export const addUser = (req, res) => {
       return res.status(200).json("Usuário deletado com sucesso.");
     });
   };
+
+  export const getUser = (req, res) => {
+    const q = "SELECT * FROM usuarios WHERE `id` = ?";
+
+    db.query(q, [req.params.id], (err,data) => {
+      if(err) return res.status(400).json(err);
+
+      return res.status(200).json(data)
+    })
+
+  }
